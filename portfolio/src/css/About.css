@@ -1,0 +1,21 @@
+#aboutContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#textContent {
+    flex-basis: 400px;
+    margin-right: 100px;
+}
+
+#aboutName {
+    color: #E7E7E7;
+}
+
+#aboutText {
+    color: #C7C7C7
+}

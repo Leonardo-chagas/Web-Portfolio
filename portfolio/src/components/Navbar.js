@@ -7,16 +7,19 @@ function Navbar() {
         <nav>
             <ul>
                 <li>
-                    <Link to="/">Sobre Mim</Link>
+                    <Link id='link' to="/">Sobre Mim</Link>
                 </li>
+                <div id='separator'></div>
                 <li>
-                    <Link to="/competencias">Competências</Link>
+                    <Link id='link' to="/competencias">Competências</Link>
                 </li>
+                <div id='separator'></div>
                 <li>
-                    <Link to="/projetos">Projetos</Link>
+                    <Link id='link' to="/projetos">Projetos</Link>
                 </li>
+                <div id='separator'></div>
                 <li>
-                    <Link to="/contato">Contato</Link>
+                    <Link id='link' to="/contato">Contato</Link>
                 </li>
             </ul>
         </nav>
