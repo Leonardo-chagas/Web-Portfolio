@@ -5,13 +5,30 @@ ul {
     list-style: none;
 }
 
-#link {
+.link {
     text-decoration: none;
     color: #A5A5A5;
 }
 
-#link:hover {
+.link:hover {
     color: #B46F32;
+}
+
+/* .active {
+    background-color: #A87C54;
+    height: 100%;
+    opacity: 0.5;
+    text-decoration: none;
+    pointer-events: none;
+    cursor: default;
+    border-radius: 5px;
+} */
+
+.active {
+    text-decoration: none;
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.7;
 }
 
 /* ul li {
@@ -37,3 +54,8 @@ nav {
     padding: .1px 0;
 }
 
+.navWrapper {
+    height: 100%;
+    color: #B46F32;
+    border-bottom: 2px solid #B46F32;
+}

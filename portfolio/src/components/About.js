@@ -13,7 +13,7 @@ function About() {
    });
     return (
         <div id="bodyContainer">
-            <Navbar/>
+            <Navbar current={1}/>
             <div id="aboutContent">
                 <div id="textContent">
                     <h1 class="titleText">Leonardo Silveira Chagas</h1>
