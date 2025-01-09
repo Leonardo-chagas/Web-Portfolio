@@ -1,0 +1,9 @@
+.projectContent {
+    display: flex;
+    flex-direction: row;
+}
+
+.projectTextContent {
+    display: flex;
+    flex-direction: column;
+}
