@@ -1,5 +1,5 @@
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+/* import Navbar from "./Navbar";
+import Footer from "./Footer"; */
 import React, { useLayoutEffect } from 'react'
 
 function Contact() {
@@ -8,8 +8,8 @@ function Contact() {
        });
     return (
         <div>
-            <Navbar/>
-            <Footer/>
+            {/* <Navbar/>
+            <Footer/> */}
         </div>
     );
 }

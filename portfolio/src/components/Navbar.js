@@ -1,41 +1,49 @@
 import '../css/Navbar.css';
 import {Outlet, Link} from "react-router-dom";
 import { useState } from 'react';
+import React, { useRef } from 'react';
+import Toggle from './Toggle';
 
-function Navbar({current}) {
+function Navbar({navFunction, isChecked, handleChange}) {
     //const [active, setActive] = useState(current);
+    //const ref1 = useRef(aboutRef);
 
     return (
         <>
         <nav>
             <ul>
                 <li>
-                    <div class={current == 1 ? "navWrapper" : ""}>
-                        <Link class={current == 1 ? "active" : "link"} to="/">Sobre Mim</Link>
+                    <div >
+                        {/* <Link class={current == 1 ? "active" : "link"} to="/">Sobre Mim</Link> */}
+                        <a class="link" onClick={() => navFunction(1)}>Sobre Mim</a>
                     </div>
                 </li>
                 <div id='separator'></div>
                 <li>
-                    <div class={current == 2 ? "navWrapper" : ""}>
-                        <Link class={current == 2 ? "active" : "link"} to="/competencias">Competências</Link>
+                    <div >
+                        {/* <Link class={current == 2 ? "active" : "link"} to="/competencias">Competências</Link> */}
+                        <a class="link" onClick={() => navFunction(2)}>Competências</a>
                     </div>
                 </li>
                 <div id='separator'></div>
                 <li>
-                    <div class={current == 3 ? "navWrapper" : ""}>
-                        <Link class={current == 3 ? "active" : "link"} to="/projetos">Projetos</Link>
+                    <div >
+                        {/* <Link class={current == 3 ? "active" : "link"} to="/projetos">Projetos</Link> */}
+                        <a class="link" onClick={() => navFunction(3)}>Projetos</a>
                     </div>
                 </li>
                 <div id='separator'></div>
                 <li>
-                    <div class={current == 4 ? "navWrapper" : ""}>
-                        <Link class={current == 4 ? "active" : "link"} to="/contato">Contato</Link>
+                    <div >
+                        {/* <Link class={current == 4 ? "active" : "link"} to="/contato">Contato</Link> */}
+                        <a class="link" onClick={() => navFunction(4)}>Contato</a>
                     </div>
                 </li>
             </ul>
+            <Toggle isChecked={isChecked} handleChange={handleChange}/>
         </nav>
 
-        <Outlet/>
+        {/* <Outlet/> */}
         </>
     );
 }

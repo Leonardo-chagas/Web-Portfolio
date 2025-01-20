@@ -1,5 +1,5 @@
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+/* import Navbar from "./Navbar"; */
+/* import Footer from "./Footer"; */
 import React, { useLayoutEffect } from 'react'
 import ReactOriginal from 'devicons-react/lib/icons/ReactOriginal';
 import Html5Original from 'devicons-react/lib/icons/Html5Original';
@@ -11,13 +11,13 @@ import "../css/Text.css"
 import "../css/Container.css"
 
 function Skills() {
-    useLayoutEffect(() => {
+    /* useLayoutEffect(() => {
             document.body.style.backgroundColor = "#212121"
-       });
+       }); */
     return (
         <div id="bodyContainer">
-            <Navbar current={2}/>
-            <div id="skillsTitle">
+            {/* <Navbar current={2}/> */}
+            <div class="centerTitle">
                 <h1 class="titleText">Competências</h1>
             </div>
             <hr></hr>
@@ -44,7 +44,7 @@ function Skills() {
                     <h2 class="titleText">Unity Engine</h2>
                 </div>
             </div>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     );
 }

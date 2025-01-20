@@ -1,7 +1,7 @@
 .infoText {
-    color: #C7C7C7;
+    color: var(--secondary-text-color);
 }
 
 .titleText {
-    color: #E7E7E7;
+    color: var(--primary-text-color);
 }

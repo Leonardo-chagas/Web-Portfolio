@@ -1,0 +1,45 @@
+#titleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--background-color);
+}
+
+.titleContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* .titleContent:first-child {
+    margin-left: ;
+} */
+
+#firstName {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 128px;
+    color: var(--primary-text-color);
+    margin-bottom: -50px;
+}
+
+#lastName {
+    font-size: 96px;
+    margin-top: 0px;
+    color: var(--highlight-color);
+}
+
+.titles {
+    font-size: 48px;
+    margin-bottom: -100px;
+    margin-top: -100px;
+    color: var(--primary-text-color);
+}
+
+.titles:first-child {
+    margin-top: 0;
+}
+
+.titles:last-child {
+    margin-bottom: 0;
+    color: var(--highlight-color);
+}

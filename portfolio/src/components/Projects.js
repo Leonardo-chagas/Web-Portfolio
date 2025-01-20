@@ -1,5 +1,5 @@
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+/* import Navbar from "./Navbar"; */
+/* import Footer from "./Footer"; */
 import React, { useLayoutEffect } from 'react'
 import "../css/Container.css"
 import "../css/Text.css"
@@ -8,12 +8,12 @@ import game from "../images/Game2.png"
 import planalto from "../images/planalto.jpeg"
 
 function Projects() {
-    useLayoutEffect(() => {
+    /* useLayoutEffect(() => {
             document.body.style.backgroundColor = "#212121"
-       });
+       }); */
     return (
         <div id="bodyContainer">
-            <Navbar current={3}/>
+            {/* <Navbar current={3}/> */}
             <div class="projectContent">
                 <div class="projectTextContent">
                     <h2 class="titleText">Portfolio Web</h2>
@@ -50,7 +50,7 @@ function Projects() {
                 </div>
                 <img></img>
             </div>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     );
 }

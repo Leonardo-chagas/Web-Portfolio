@@ -1,0 +1,69 @@
+#toggleContainer {
+    position: absolute;
+    top: 1em;
+    left: 30em;
+    background-color: var(--toggle-bg);
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: left;
+}
+
+/* .icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  } */
+
+.toggle {
+    visibility: hidden;
+}
+
+/* .toggle + span::before {
+    content: "";
+    
+    display: block;
+    height: 1em;
+    width: 2em;
+    border-radius: 1em;
+    background-color: var(--toggle-fg);
+} */
+.toggle + div::before{
+    content: "";
+    background-color: var(--toggle-fg);
+}
+
+.iconShow::before {
+    font: var(--fa-font-solid);
+ 
+    content: "\f186";
+    color: aqua;
+}
+
+#iconDark {
+    background-color: var(--toggle-fg);
+    border-radius: 100%;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 2px; */
+    margin-left: 25px;
+    transition: 500ms;
+}
+
+#iconLight {
+    background-color: var(--toggle-fg);
+    border-radius: 100%;
+    width: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 2px; */
+    transition: 500ms;
+}
+
+#icon {
+    
+}
