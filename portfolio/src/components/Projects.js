@@ -4,8 +4,10 @@ import React, { useLayoutEffect } from 'react'
 import "../css/Container.css"
 import "../css/Text.css"
 import "../css/Projects.css"
-import game from "../images/Game2.png"
-import planalto from "../images/planalto.jpeg"
+/* import game from "../images/Game2.png"
+import planalto from "../images/planalto.jpeg" */
+import projectData from "../Data/data.json"
+import Project from './Project'
 
 function Projects() {
     /* useLayoutEffect(() => {
@@ -13,8 +15,12 @@ function Projects() {
        }); */
     return (
         <div id="bodyContainer">
-            {/* <Navbar current={3}/> */}
-            <div class="projectContent">
+            <div id='projectsContent'>
+                {projectData.map((project, key) => (
+                    <Project name={project.name} tecnology={project.tecnology} text={project.text} reference={project.reference} hasLink={project.hasLink} image={project.image}/>
+                ))}
+            </div>
+            {/* <div class="projectContent">
                 <div class="projectTextContent">
                     <h2 class="titleText">Portfolio Web</h2>
                     <h3 class="titleText">Tecnologia: <b>React</b></h3>
@@ -49,8 +55,8 @@ function Projects() {
                     <p class="infoText"></p>
                 </div>
                 <img></img>
-            </div>
-            {/* <Footer/> */}
+            </div> */}
+            
         </div>
     );
 }

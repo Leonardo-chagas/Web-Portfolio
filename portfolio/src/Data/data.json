@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Portfolio Web",
+        "tecnology": "React",
+        "text": "",
+        "reference": "https://github.com/Leonardo-chagas/Web-Portfolio",
+        "hasLink": true,
+        "image": ""
+    },
+    {
+        "name": "Aplicativo Mobile",
+        "tecnology": "React Native",
+        "text": "",
+        "reference": "https://github.com/Leonardo-chagas/planalto-front-viagens",
+        "hasLink": true,
+        "image": ""
+    },
+    {
+        "name": "Jogo de Cartas",
+        "tecnology": "Unity",
+        "text": "",
+        "reference": "https://github.com/Leonardo-chagas/Code_In_Hand",
+        "hasLink": true,
+        "image": "images/Game2.png"
+    },
+    {
+        "name": "",
+        "tecnology": "Python",
+        "text": "",
+        "reference": "",
+        "hasLink": false,
+        "image": ""
+    }
+]
