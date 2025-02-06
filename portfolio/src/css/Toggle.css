@@ -51,6 +51,7 @@
     /* padding: 2px; */
     margin-left: 25px;
     transition: 500ms;
+    cursor: pointer;
 }
 
 #iconLight {
@@ -62,6 +63,7 @@
     align-items: center;
     /* padding: 2px; */
     transition: 500ms;
+    cursor: pointer;
 }
 
 #icon {
