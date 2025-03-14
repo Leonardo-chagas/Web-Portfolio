@@ -9,16 +9,18 @@ import UnityOriginal from 'devicons-react/lib/icons/UnityOriginal';
 import "../css/Skills.css"
 import "../css/Text.css"
 import "../css/Container.css"
+import { useTranslation } from 'react-i18next';
 
 function Skills() {
-    /* useLayoutEffect(() => {
-            document.body.style.backgroundColor = "#212121"
-       }); */
+    const {t} = useTranslation();
+    const skillsTranslation = t('Skills');
+
+
     return (
         <div id="bodyContainer">
             {/* <Navbar current={2}/> */}
             <div class="centerTitle">
-                <h1 class="titleText">Competências</h1>
+                <h1 class="titleText">{skillsTranslation.skills}</h1>
             </div>
             <hr></hr>
             <div id="skillsContainer">
