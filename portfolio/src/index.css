@@ -13,6 +13,7 @@ body {
   --link-color: #A5A5A5;
   --primary-text-color: #E7E7E7;
   --secondary-text-color: #C7C7C7;
+  --button-text-color: #2A2A2A;
   --highlight-color: #7B1F90;
   --toggle-bg: #E3E3E3;
   --toggle-fg: #7B1F90;
@@ -24,6 +25,7 @@ body {
   --link-color: #5E5E5E;
   --primary-text-color: #2A2A2A;
   --secondary-text-color: #424242;
+  --button-text-color: #E7E7E7;
   --highlight-color: #7B1F90;
   --toggle-bg: #212121;
   --toggle-fg: #7B1F90;

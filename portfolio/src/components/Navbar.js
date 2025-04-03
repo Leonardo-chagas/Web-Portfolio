@@ -45,8 +45,12 @@ function Navbar({navFunction, isChecked, handleChange}) {
                     </div>
                 </li>
             </ul>
-            <Toggle isChecked={isChecked} handleChange={handleChange}/>
+            
+            
             <LanguageSelector/>
+
+            <Toggle isChecked={isChecked} handleChange={handleChange}/>
+            
         </nav>
 
         {/* <Outlet/> */}

@@ -1,5 +1,6 @@
 import React from "react";
 import '../css/Container.css'
+import "../css/LanguageSelector.css"
 import { useTranslation } from "react-i18next";
 
 function LanguageSelector(){
@@ -15,7 +16,7 @@ function LanguageSelector(){
     }
 
     return(
-        <div class='centerTitle'>
+        <div id='languageContainer'>
             {languages.map((lng) => {
                 return <button class={lng.code == i18n.language ? 'selected' : ''} key={lng.code} onClick={() => ChangeLanguage(lng.code)}>{lng.lang}</button>
             })}
