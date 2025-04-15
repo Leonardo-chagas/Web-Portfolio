@@ -8,15 +8,24 @@ import "../css/Projects.css"
 import planalto from "../images/planalto.jpeg" */
 import projectData from "../Data/data.json"
 import Project from './Project'
+import { useTranslation } from "react-i18next"
 
 function Projects() {
     /* useLayoutEffect(() => {
             document.body.style.backgroundColor = "#212121"
        }); */
+    const {t} = useTranslation();
+   //const projectsTranslation = t('Projects');
+
     return (
         <div id="bodyContainer">
+            {/* <div id='projectsContent'>
+                {projectsTranslation.map((project, key) => (
+                    <Project name={project.name} tecnology={project.tecnology} text={project.text} reference={project.reference} hasLink={project.hasLink} image={project.image}/>
+                ))}
+            </div> */}
             <div id='projectsContent'>
-                {projectData.map((project, key) => (
+                {t('Projects', {returnObjects: true}).map((project) => (
                     <Project name={project.name} tecnology={project.tecnology} text={project.text} reference={project.reference} hasLink={project.hasLink} image={project.image}/>
                 ))}
             </div>

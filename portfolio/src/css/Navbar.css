@@ -2,7 +2,7 @@ ul {
     display: flex;
     flex-direction: row;
     /* width: 20cm; */
-    width: 30%;
+    /* width: 30%; */
     list-style: none;
 }
 
@@ -42,11 +42,15 @@ ul li:last-child {
     border-right: 0;
 } */
 
-#separator {
+.listSeparator {
     margin-right: 20px;
     height: 20px;
     margin-left: 15px;
     border-right: 1px solid var(--link-color);
+}
+
+.separator {
+    margin-left: 20px;
 }
 
 nav {

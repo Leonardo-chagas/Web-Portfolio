@@ -19,37 +19,39 @@ function Navbar({navFunction, isChecked, handleChange}) {
             <ul>
                 <li>
                     <div >
-                        {/* <Link class={current == 1 ? "active" : "link"} to="/">Sobre Mim</Link> */}
                         <a class="link" onClick={() => navFunction(1)}>{navbarTrans.about}</a>
                     </div>
                 </li>
-                <div id='separator'></div>
+                <div class='listSeparator'></div>
                 <li>
                     <div >
-                        {/* <Link class={current == 2 ? "active" : "link"} to="/competencias">Competências</Link> */}
                         <a class="link" onClick={() => navFunction(2)}>{navbarTrans.skills}</a>
                     </div>
                 </li>
-                <div id='separator'></div>
+                <div class='listSeparator'></div>
                 <li>
                     <div >
-                        {/* <Link class={current == 3 ? "active" : "link"} to="/projetos">Projetos</Link> */}
                         <a class="link" onClick={() => navFunction(3)}>{navbarTrans.projects}</a>
                     </div>
                 </li>
-                <div id='separator'></div>
+                <div class='listSeparator'></div>
                 <li>
                     <div >
-                        {/* <Link class={current == 4 ? "active" : "link"} to="/contato">Contato</Link> */}
                         <a class="link" onClick={() => navFunction(4)}>{navbarTrans.contact}</a>
                     </div>
                 </li>
+                <div class='separator'>
+                    <Toggle isChecked={isChecked} handleChange={handleChange}/>
+                </div>
+                <div class='separator'>
+                    <LanguageSelector/>
+                </div>
             </ul>
             
             
-            <LanguageSelector/>
+            {/* <LanguageSelector/> */}
 
-            <Toggle isChecked={isChecked} handleChange={handleChange}/>
+            {/* <Toggle isChecked={isChecked} handleChange={handleChange}/> */}
             
         </nav>
 
