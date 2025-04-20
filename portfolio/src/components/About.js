@@ -30,12 +30,12 @@ function About() {
             <hr></hr>
             <div id="educationContainer">
                 <div class="educationContent">
-                    <h2 class="titleText">{aboutTranslation.course}</h2>
+                    <h2 class="titleText educationTitle">{aboutTranslation.course}</h2>
                     <h3 class="infoText">{aboutTranslation.college}</h3>
                     <h3 class="infoText">2018 - 2023</h3>
                 </div>
                 <div class="educationContent">
-                    <h2 class="titleText">{aboutTranslation.masters}</h2>
+                    <h2 class="titleText educationTitle">{aboutTranslation.masters}</h2>
                     <h3 class="infoText">{aboutTranslation.college}</h3>
                     <h3 class="infoText">2023 - 2025</h3>
                 </div>

@@ -46,7 +46,6 @@ function Skills() {
                     <h2 class="titleText">Unity Engine</h2>
                 </div>
             </div>
-            {/* <Footer/> */}
         </div>
     );
 }

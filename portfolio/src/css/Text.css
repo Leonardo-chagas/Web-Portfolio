@@ -1,7 +1,20 @@
 .infoText {
     color: var(--secondary-text-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .titleText {
     color: var(--primary-text-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.titleText.educationTitle {
+    text-align: left;
+}
+
+.infoText.projectTech {
+    text-align: center;
 }

@@ -20,12 +20,14 @@
     font-size: 128px;
     color: var(--primary-text-color);
     margin-bottom: -50px;
+    text-shadow: 2px 2px var(--highlight-color);
 }
 
 #lastName {
     font-size: 96px;
     margin-top: 0px;
     color: var(--highlight-color);
+    text-shadow: 2px 2px var(--primary-text-color);
 }
 
 .titles {
@@ -33,6 +35,7 @@
     margin-bottom: -100px;
     margin-top: -100px;
     color: var(--primary-text-color);
+    text-shadow: 2px 2px var(--highlight-color);
 }
 
 .titles:first-child {
@@ -42,4 +45,5 @@
 .titles:last-child {
     margin-bottom: 0;
     color: var(--highlight-color);
+    text-shadow: 2px 2px var(--primary-text-color);
 }

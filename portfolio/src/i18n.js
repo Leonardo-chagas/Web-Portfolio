@@ -30,6 +30,9 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 Skills: {
                     skills: 'Competências'
                 },
+                Project: {
+                    projects: 'Projetos'
+                },
                 Projects: [
                     {
                         name: 'Portfolio Web',
@@ -50,7 +53,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                     {
                         name: 'Jogo de Cartas',
                         tecnology: 'Unity',
-                        text: 'projeto de TCC desenvolvido em Unity, que se trata de um jogo de cartas para ensinar conceitos de programação. O jogador deve colocar cartas na tela para formar o programa solicitado pelo desafio. Para validar o código dos jogadores, foi utilizado o ANTLR4 para criar uma linguagem de programação simples.',
+                        text: 'Projeto de TCC desenvolvido em Unity, que se trata de um jogo de cartas para ensinar conceitos de programação. O jogador deve colocar cartas na tela para formar o programa solicitado pelo desafio. Para validar o código dos jogadores, foi utilizado o ANTLR4 para criar uma linguagem de programação simples.',
                         reference: 'https://github.com/Leonardo-chagas/Code_In_Hand',
                         hasLink: true,
                         image: 'images/Game2.png'
@@ -91,6 +94,9 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 },
                 Skills: {
                     skills: 'Skills'
+                },
+                Project: {
+                    projects: 'Projects'
                 },
                 Projects: [
                     {
