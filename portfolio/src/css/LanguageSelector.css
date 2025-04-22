@@ -9,13 +9,17 @@
 }
 
 button {
-    background-color: var(--toggle-bg);
+    background-color: var(--button-bg);
     border: 1;
     border-radius: 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     color: var(--button-text-color);
     cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--button-hover-bg);
 }
 
 .selected {

@@ -14,9 +14,11 @@ body {
   --primary-text-color: #E7E7E7;
   --secondary-text-color: #C7C7C7;
   --button-text-color: #2A2A2A;
-  --highlight-color: #7B1F90;
+  --highlight-color: #A96ACB;
   --toggle-bg: #E3E3E3;
-  --toggle-fg: #7B1F90;
+  --toggle-fg: #A96ACB;
+  --button-bg: #C7C7C7;
+  --button-hover-bg: #E7E7E7;
 }
 
 [data-theme="light"] {
@@ -26,7 +28,11 @@ body {
   --primary-text-color: #2A2A2A;
   --secondary-text-color: #424242;
   --button-text-color: #E7E7E7;
-  --highlight-color: #7B1F90;
+  --highlight-color: #A96ACB;
   --toggle-bg: #212121;
-  --toggle-fg: #7B1F90;
+  --toggle-fg: #A96ACB;
+  --button-bg: #2A2A2A;
+  --button-hover-bg: #424242;
 }
+
+/* #7B1F90 */
