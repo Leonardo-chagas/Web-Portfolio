@@ -10,6 +10,7 @@ import "../css/Skills.css"
 import "../css/Text.css"
 import "../css/Container.css"
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 function Skills() {
     const {t} = useTranslation();
@@ -24,27 +25,27 @@ function Skills() {
             </div>
             <hr></hr>
             <div id="skillsContainer">
-                <div class="iconsContainer">
+                <motion.div class="iconsContainer" whileInView={{scale:1}} initial={{scale:0}}>
                     <ReactOriginal size={50}/>
                     <h2 class="titleText">React</h2>
-                </div>
-                <div class="iconsContainer">
+                </motion.div>
+                <motion.div class="iconsContainer" whileInView={{scale:1}} initial={{scale:0}}>
                     <Html5Original size={50}/>
                     <h2 class="titleText">HTML</h2>
-                </div>
-                <div class="iconsContainer">
+                </motion.div>
+                <motion.div class="iconsContainer" whileInView={{scale:1}} initial={{scale:0}}>
                     <Css3Original size={50}/>
                     <h2 class="titleText">CSS</h2>
-                </div>
+                </motion.div>
                 <div class="break"></div>
-                <div class="iconsContainer">
+                <motion.div class="iconsContainer" whileInView={{scale:1}} initial={{scale:0}}>
                     <PythonOriginal size={50}/>
                     <h2 class="titleText">Python</h2>
-                </div>
-                <div class="iconsContainer">
+                </motion.div>
+                <motion.div class="iconsContainer" whileInView={{scale:1}} initial={{scale:0}}>
                     <UnityOriginal size={50}/>
                     <h2 class="titleText">Unity Engine</h2>
-                </div>
+                </motion.div>
             </div>
         </div>
     );

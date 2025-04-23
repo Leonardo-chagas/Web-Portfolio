@@ -1,9 +1,10 @@
 import "../css/Project.css"
 import "../css/Text.css"
+import { motion } from "framer-motion";
 
 function Project({name, tecnology, text, reference, hasLink, image}) {
     return (
-        <div class="projectContainer">
+        <motion.div class="projectContainer" whileInView={{scale:1}} initial={{scale:0}}>
             <div>
                 <img src={image} width={20} ></img>
             </div>
@@ -15,7 +16,7 @@ function Project({name, tecnology, text, reference, hasLink, image}) {
 
                 <p>{reference}</p> 
             }
-        </div>
+        </motion.div>
     );
 }
 
