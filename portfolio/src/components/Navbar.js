@@ -1,22 +1,68 @@
 import '../css/Navbar.css';
 import {Outlet, Link} from "react-router-dom";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import React, { useRef } from 'react';
 import Toggle from './Toggle';
 import LanguageSelector from './LanguageSelector';
 import { useTranslation } from "react-i18next"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faSun } from '@fortawesome/free-solid-svg-icons';
 
 function Navbar({navFunction, isChecked, handleChange}) {
     //const [active, setActive] = useState(current);
     //const ref1 = useRef(aboutRef);
     const {t} = useTranslation();
     const navbarTrans = t('Navbar');
+
+    const [showResponsiveMenu, setShowResponsiveMenu] = useState(false);
+
+    const handleResize = () => {
+        setShowResponsiveMenu(false);
+    }
+
+    useEffect(() => {
+        window.addEventListener("resize", handleResize);
+    })
+
+    const toggleResponsiveMenu = () => {
+        setShowResponsiveMenu(!showResponsiveMenu);
+    }
     
 
     return (
         <>
         <nav>
-            <ul>
+            
+            <FontAwesomeIcon onClick={toggleResponsiveMenu} icon={faBars} class="responsiveIcon"/>
+
+            {showResponsiveMenu &&
+            <ul class="responsiveMenu">
+                <li>
+                    <div >
+                        <a class="link" onClick={() => navFunction(1)}>{navbarTrans.about}</a>
+                    </div>
+                </li>
+                <li>
+                    <div >
+                        <a class="link" onClick={() => navFunction(2)}>{navbarTrans.skills}</a>
+                    </div>
+                </li>
+                <li>
+                    <div >
+                        <a class="link" onClick={() => navFunction(3)}>{navbarTrans.projects}</a>
+                    </div>
+                </li>
+                <li>
+                    <div >
+                        <a class="link" onClick={() => navFunction(4)}>{navbarTrans.contact}</a>
+                    </div>
+                </li>
+            </ul>}
+            
+            <ul class="navMenu">
+                {/* <li class="responsiveIcon">
+                    <FontAwesomeIcon icon={faBars}/>
+                </li> */}
                 <li>
                     <div >
                         <a class="link" onClick={() => navFunction(1)}>{navbarTrans.about}</a>
@@ -40,14 +86,20 @@ function Navbar({navFunction, isChecked, handleChange}) {
                         <a class="link" onClick={() => navFunction(4)}>{navbarTrans.contact}</a>
                     </div>
                 </li>
+                {/* <div class='separator'>
+                    <Toggle isChecked={isChecked} handleChange={handleChange}/>
+                </div>
                 <div class='separator'>
+                    <LanguageSelector/>
+                </div> */}
+            </ul>
+
+            <div class='separator'>
                     <Toggle isChecked={isChecked} handleChange={handleChange}/>
                 </div>
                 <div class='separator'>
                     <LanguageSelector/>
                 </div>
-            </ul>
-            
             
             {/* <LanguageSelector/> */}
 

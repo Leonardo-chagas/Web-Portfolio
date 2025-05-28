@@ -37,7 +37,7 @@ function Skills() {
                     <Css3Original size={50}/>
                     <h2 class="titleText">CSS</h2>
                 </motion.div>
-                <div class="break"></div>
+                {/* <div class="break"></div> */}
                 <motion.div class="iconsContainer" whileInView={{scale:1}} initial={{scale:0}}>
                     <PythonOriginal size={50}/>
                     <h2 class="titleText">Python</h2>
