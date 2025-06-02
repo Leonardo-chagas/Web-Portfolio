@@ -44,17 +44,22 @@ function Navbar({navFunction, isChecked, handleChange}) {
                 </li>
                 <li>
                     <div >
-                        <a class="link" onClick={() => navFunction(2)}>{navbarTrans.skills}</a>
+                        <a class="link" onClick={() => navFunction(2)}>{navbarTrans.experiences}</a>
                     </div>
                 </li>
                 <li>
                     <div >
-                        <a class="link" onClick={() => navFunction(3)}>{navbarTrans.projects}</a>
+                        <a class="link" onClick={() => navFunction(3)}>{navbarTrans.skills}</a>
                     </div>
                 </li>
                 <li>
                     <div >
-                        <a class="link" onClick={() => navFunction(4)}>{navbarTrans.contact}</a>
+                        <a class="link" onClick={() => navFunction(4)}>{navbarTrans.projects}</a>
+                    </div>
+                </li>
+                <li>
+                    <div >
+                        <a class="link" onClick={() => navFunction(5)}>{navbarTrans.contact}</a>
                     </div>
                 </li>
             </ul>}
@@ -71,19 +76,25 @@ function Navbar({navFunction, isChecked, handleChange}) {
                 <div class='listSeparator'></div>
                 <li>
                     <div >
-                        <a class="link" onClick={() => navFunction(2)}>{navbarTrans.skills}</a>
+                        <a class="link" onClick={() => navFunction(2)}>{navbarTrans.experiences}</a>
                     </div>
                 </li>
                 <div class='listSeparator'></div>
                 <li>
                     <div >
-                        <a class="link" onClick={() => navFunction(3)}>{navbarTrans.projects}</a>
+                        <a class="link" onClick={() => navFunction(3)}>{navbarTrans.skills}</a>
                     </div>
                 </li>
                 <div class='listSeparator'></div>
                 <li>
                     <div >
-                        <a class="link" onClick={() => navFunction(4)}>{navbarTrans.contact}</a>
+                        <a class="link" onClick={() => navFunction(4)}>{navbarTrans.projects}</a>
+                    </div>
+                </li>
+                <div class='listSeparator'></div>
+                <li>
+                    <div >
+                        <a class="link" onClick={() => navFunction(5)}>{navbarTrans.contact}</a>
                     </div>
                 </li>
                 {/* <div class='separator'>

@@ -44,7 +44,7 @@ function Skills() {
                 </motion.div>
                 <motion.div class="iconsContainer" whileInView={{scale:1}} initial={{scale:0}}>
                     <UnityOriginal size={50}/>
-                    <h2 class="titleText">Unity Engine</h2>
+                    <h2 class="titleText">Unity</h2>
                 </motion.div>
             </div>
         </div>

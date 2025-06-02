@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 function Project({name, tecnology, text, reference, hasLink, image}) {
     return (
         <motion.div class="projectContainer" whileInView={{scale:1}} initial={{scale:0}}>
-            <div>
-                <img src={image} width={20} ></img>
+            <div class="imgContainer">
+                <img src={image} class="projectImg"></img>
             </div>
             <h2 class="titleText">{name}</h2>
             <h3 class="infoText projectTech">{tecnology}</h3>

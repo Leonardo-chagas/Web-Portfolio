@@ -25,7 +25,7 @@ function About() {
                     <p class="infoText">{aboutTranslation.text}</p>
                 </motion.div>
                 <motion.div whileInView={{x:0}} initial={{x:300}} transition={{duration:1.5}} viewport={{once:true}}>
-                    <img src={"images/eu.jpeg"} alt="imagem"></img>
+                    <img src={"images/eu.jpeg"} alt="imagem" class="aboutImg"></img>
                 </motion.div>
             </div>
             <div class="centerTitle">

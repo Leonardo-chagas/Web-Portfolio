@@ -6,3 +6,23 @@
     margin-right: 3em;
     /* width: 15%; */
 }
+
+.projectImg {
+    /* width: 100%;
+    max-width: 250px;
+    height: auto;
+    max-height: 250px; */
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.imgContainer {
+    padding-top: calc(10px + 1.5625vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    max-height: 200px;
+}

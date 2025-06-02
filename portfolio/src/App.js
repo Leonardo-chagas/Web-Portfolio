@@ -4,6 +4,7 @@ import React, { useRef, useState, useLayoutEffect } from 'react';
 import Navbar from "./components/Navbar";
 import Title from "./components/Title";
 import About from "./components/About";
+import Experiences from './components/Experiences';
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
@@ -16,6 +17,7 @@ function App() {
   const [isDark, setIsDark] = useState(true);
 
   const aboutRef = useRef();
+  const experiencesRef = useRef();
   const skillsRef = useRef();
   const projectsRef = useRef();
   const contactRef = useRef();
@@ -25,12 +27,15 @@ function App() {
       aboutRef.current.scrollIntoView();
     }
     else if(ref == 2){
-      skillsRef.current.scrollIntoView();
+      experiencesRef.current.scrollIntoView();
     }
     else if(ref == 3){
-      projectsRef.current.scrollIntoView();
+      skillsRef.current.scrollIntoView();
     }
     else if(ref == 4){
+      projectsRef.current.scrollIntoView();
+    }
+    else if(ref == 5){
       contactRef.current.scrollIntoView();
     }
   }
@@ -54,6 +59,9 @@ function App() {
       <Title/>
       <div ref={aboutRef}>
         <About/>
+      </div>
+      <div ref={experiencesRef}>
+        <Experiences/>
       </div>
       <div ref={skillsRef}>
         <Skills/>
