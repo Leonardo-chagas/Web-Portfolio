@@ -9,6 +9,7 @@ ul {
 
 .link {
     text-decoration: none;
+    text-wrap: nowrap;
     color: var(--link-color);
 }
 
@@ -74,6 +75,7 @@ nav {
 .navMenu{
     display: block;
     display: flex;
+    padding-right: calc(15px + 1.5625vw);
     flex-direction: row;
 }
 

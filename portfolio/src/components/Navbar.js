@@ -20,6 +20,11 @@ function Navbar({navFunction, isChecked, handleChange}) {
         setShowResponsiveMenu(false);
     }
 
+    const handleNavButton = (index) => {
+        setShowResponsiveMenu(false);
+        navFunction(index);
+    }
+
     useEffect(() => {
         window.addEventListener("resize", handleResize);
     })
@@ -39,27 +44,27 @@ function Navbar({navFunction, isChecked, handleChange}) {
             <ul class="responsiveMenu">
                 <li>
                     <div >
-                        <a class="link" onClick={() => navFunction(1)}>{navbarTrans.about}</a>
+                        <a class="link" onClick={() => handleNavButton(1)}>{navbarTrans.about}</a>
                     </div>
                 </li>
                 <li>
                     <div >
-                        <a class="link" onClick={() => navFunction(2)}>{navbarTrans.experiences}</a>
+                        <a class="link" onClick={() => handleNavButton(2)}>{navbarTrans.experiences}</a>
                     </div>
                 </li>
                 <li>
                     <div >
-                        <a class="link" onClick={() => navFunction(3)}>{navbarTrans.skills}</a>
+                        <a class="link" onClick={() => handleNavButton(3)}>{navbarTrans.skills}</a>
                     </div>
                 </li>
                 <li>
                     <div >
-                        <a class="link" onClick={() => navFunction(4)}>{navbarTrans.projects}</a>
+                        <a class="link" onClick={() => handleNavButton(4)}>{navbarTrans.projects}</a>
                     </div>
                 </li>
                 <li>
                     <div >
-                        <a class="link" onClick={() => navFunction(5)}>{navbarTrans.contact}</a>
+                        <a class="link" onClick={() => handleNavButton(5)}>{navbarTrans.contact}</a>
                     </div>
                 </li>
             </ul>}

@@ -27,7 +27,7 @@ function Projects() {
             </div> */}
             <div id='projectsContent'>
                 {t('Projects', {returnObjects: true}).map((project) => (
-                    <Project name={project.name} tecnology={project.tecnology} text={project.text} reference={project.reference} hasLink={project.hasLink} image={project.image}/>
+                    <Project name={project.name} tecnology={project.tecnology} text={project.text} reference={project.reference} hasLink={project.hasLink} linkText={project.linkText} image={project.image}/>
                 ))}
             </div>
         </div>
