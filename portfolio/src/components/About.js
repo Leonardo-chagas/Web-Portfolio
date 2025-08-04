@@ -1,18 +1,10 @@
-/* import Navbar from "./Navbar"; */
-/* import Footer from "./Footer"; */
-//import myImage from "../images/eu.jpeg"
 import "../css/About.css"
 import "../css/Container.css"
 import "../css/Text.css"
 import { useTranslation } from "react-i18next"
 import { motion } from "framer-motion"
 
-import React, { useLayoutEffect } from 'react'
-
 function About() {
-    /* useLayoutEffect(() => {
-        document.body.style.backgroundColor = "#212121"
-   }); */
    const {t} = useTranslation();
    const aboutTranslation = t('About');
 

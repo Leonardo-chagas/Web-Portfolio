@@ -1,16 +1,12 @@
 import '../css/Navbar.css';
-import {Outlet, Link} from "react-router-dom";
 import { useState, useEffect } from 'react';
-import React, { useRef } from 'react';
 import Toggle from './Toggle';
 import LanguageSelector from './LanguageSelector';
 import { useTranslation } from "react-i18next"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faSun } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 function Navbar({navFunction, isChecked, handleChange}) {
-    //const [active, setActive] = useState(current);
-    //const ref1 = useRef(aboutRef);
     const {t} = useTranslation();
     const navbarTrans = t('Navbar');
 
@@ -70,9 +66,6 @@ function Navbar({navFunction, isChecked, handleChange}) {
             </ul>}
             
             <ul class="navMenu">
-                {/* <li class="responsiveIcon">
-                    <FontAwesomeIcon icon={faBars}/>
-                </li> */}
                 <li>
                     <div >
                         <a class="link" onClick={() => navFunction(1)}>{navbarTrans.about}</a>
@@ -102,12 +95,6 @@ function Navbar({navFunction, isChecked, handleChange}) {
                         <a class="link" onClick={() => navFunction(5)}>{navbarTrans.contact}</a>
                     </div>
                 </li>
-                {/* <div class='separator'>
-                    <Toggle isChecked={isChecked} handleChange={handleChange}/>
-                </div>
-                <div class='separator'>
-                    <LanguageSelector/>
-                </div> */}
             </ul>
 
             <div class='separator'>
@@ -117,13 +104,7 @@ function Navbar({navFunction, isChecked, handleChange}) {
                     <LanguageSelector/>
                 </div>
             
-            {/* <LanguageSelector/> */}
-
-            {/* <Toggle isChecked={isChecked} handleChange={handleChange}/> */}
-            
         </nav>
-
-        {/* <Outlet/> */}
         </>
     );
 }

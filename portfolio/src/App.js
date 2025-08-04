@@ -7,7 +7,6 @@ import About from "./components/About";
 import Experiences from './components/Experiences';
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Toggle from './components/Toggle';
 import './App.css';
@@ -70,9 +69,8 @@ function App() {
         <Projects/>
       </div>
       <div ref={contactRef}>
-        <Contact/>
+        <Footer/>
       </div>
-      <Footer/>
     </div>
   );
 }

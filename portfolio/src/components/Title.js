@@ -10,22 +10,13 @@ function Title() {
     return (
         <div id="titleContainer">
             <motion.div class="titleContent" animate={{x:0}} initial={{x:-300}} transition={{duration:1.5}}>
-                {/* <motion.div animate={{x:0}} initial={{x:-300}} transition={{duration:3}}> */}
                     <h1 id="firstName">Leonardo</h1>
-                {/* </motion.div>
-                <motion.div animate={{x:0}} initial={{x:-300}} transition={{duration:3}}> */}
                     <h2 id="lastName">Chagas</h2>
-                {/* </motion.div> */}
-                
             </motion.div>
             <motion.div class="titleContent" animate={{x:0}} initial={{x:300}} transition={{duration:1.5}}>
-                {/* <motion.div animate={{x:0}} initial={{x:100}}> */}
                     <h3 class="titles">{titleTrans.title1}</h3>
                     <h3 class="titles">{titleTrans.title2}</h3>
-                {/* </motion.div>
-                <motion.div animate={{x:0}} initial={{x:100}}> */}
                     <h3 class="titles">{titleTrans.title3}</h3>
-                {/* </motion.div> */}
             </motion.div>
         </div>
     );

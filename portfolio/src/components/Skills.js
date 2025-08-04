@@ -1,6 +1,3 @@
-/* import Navbar from "./Navbar"; */
-/* import Footer from "./Footer"; */
-import React, { useLayoutEffect } from 'react'
 import ReactOriginal from 'devicons-react/lib/icons/ReactOriginal';
 import Html5Original from 'devicons-react/lib/icons/Html5Original';
 import Css3Original from 'devicons-react/lib/icons/Css3Original';
@@ -20,7 +17,6 @@ function Skills() {
 
     return (
         <div id="bodyContainer">
-            {/* <Navbar current={2}/> */}
             <div class="centerTitle">
                 <h1 class="titleText">{skillsTranslation.skills}</h1>
             </div>

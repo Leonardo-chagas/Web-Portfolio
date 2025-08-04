@@ -22,7 +22,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                     title3: 'Desenvolvimento de jogos'
                 },
                 About: {
-                    text: 'Graduado em Engenharia de Computação na FURG e mestrando no Programa de Pós-Graduação em Computação da FURG.  Possuo conhecimentos nas linguagens Python, HTML, CSS, JavaScript e c# e nas frameworks React Native, React e Vue. Também tenho experiência com o desenvolvimento de jogos utilizando a engine Unity, como um hobby. Grande vontade de aprender e adaptável a novas tecnologias.',
+                    text: 'Graduado em Engenharia de Computação na FURG e mestre formado no Programa de Pós-Graduação em Computação da FURG.  Possuo conhecimentos nas linguagens Python, HTML, CSS, JavaScript e c# e nas frameworks React Native, React. Também tenho experiência com o desenvolvimento de jogos utilizando a engine Unity, como um hobby. Grande vontade de aprender e adaptável a novas tecnologias.',
                     education: 'Educação',
                     college: 'Universidade Federal do Rio Grande (FURG)',
                     course: 'Graduação no curso de Engenharia da Computação',
@@ -88,6 +88,15 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                         linkText: 'Repositório para esse projeto',
                         image: 'images/GamePhoto.JPG'
                     },
+                    {
+                        name: 'Aplicação de Clima',
+                        tecnology: 'React - Axios',
+                        text: 'Aplicação de Clima criada com React para praticar o consumo de APIs. Para realizar o consumo da API, foi utilizado o axios, ferramenta essa que coleta os dados e os transforma em um objeto javascript com o mesmo comando. O usuário pode buscar por uma cidade específica, e a aplicação realiza uma chamada para a API weatherapi.com para receber as informações climáticas sobre aquela cidade',
+                        reference: 'https://github.com/Leonardo-chagas/Weather-App',
+                        hasLink: true,
+                        linkText: 'Repositório para esse projeto',
+                        image: 'images/weather_app.JPG'
+                    },
                 ],
                 Contact: {
                     phone: 'Celular'
@@ -109,7 +118,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                     title3: 'Game Development'
                 },
                 About: {
-                    text: "I have a degree in Computer Engineering from FURG and I'm studying for a master's degree in the Graduate Program in Computing at FURG.  I have knowledge of the Python, HTML, CSS, JavaScript and c# languages and the React Native, React and Vue frameworks. I also have experience developing games using the Unity engine, as a hobby. I'm eager to learn and adaptable to new technologies.",
+                    text: "I have a degree in Computer Engineering from FURG and a master's degree in the Graduate Program in Computing at FURG.  I have knowledge of the Python, HTML, CSS, JavaScript and c# languages and the React Native, React and Vue frameworks. I also have experience developing games using the Unity engine, as a hobby. I'm eager to learn and adaptable to new technologies.",
                     education: 'Education',
                     college: 'Federal University of Rio Grande (FURG)',
                     course: 'Graduation in Computer Engineering',
@@ -174,6 +183,15 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                         hasLink: true,
                         linkText: 'Repository for this project',
                         image: 'images/GamePhoto.JPG'
+                    },
+                    {
+                        name: 'Weather App',
+                        tecnology: 'React - Axios',
+                        text: 'Weather application created with React to practice API consumption. To consume the API, axios was used, a tool that collects data and transforms it into a JavaScript object with the same command. The user can search for a specific city, and the application makes a call to the weatherapi.com API to receive weather information about that city.',
+                        reference: 'https://github.com/Leonardo-chagas/Weather-App',
+                        hasLink: true,
+                        linkText: 'Repository for this project',
+                        image: 'images/weather_app.JPG'
                     },
                 ],
                 Contact: {

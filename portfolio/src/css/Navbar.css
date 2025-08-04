@@ -1,8 +1,6 @@
 ul {
     display: flex;
     flex-direction: row;
-    /* width: 20cm; */
-    /* width: 30%; */
     list-style: none;
     max-width: 600px;
 }
@@ -18,16 +16,6 @@ ul {
     cursor: pointer;
 }
 
-/* .active {
-    background-color: #A87C54;
-    height: 100%;
-    opacity: 0.5;
-    text-decoration: none;
-    pointer-events: none;
-    cursor: default;
-    border-radius: 5px;
-} */
-
 .active {
     text-decoration: none;
     pointer-events: none;
@@ -35,26 +23,13 @@ ul {
     opacity: 0.7;
 }
 
-/* ul li {
-    margin-right: 20px;
-    border-right: 1px solid #A5A5A5;
-}
-
-ul li:last-child {
-    border-right: 0;
-} */
-
 .listSeparator {
-    /* margin-right: 20px;
-    height: 20px;
-    margin-left: 15px; */
     margin-right: calc(4px + 1.5625vw);
     margin-left: calc(4px + 1.5625vw);
     border-right: 1px solid var(--link-color);
 }
 
 .separator {
-    /* margin-left: 20px; */
     margin-left: calc(4px + 1.5625vw);
 }
 
@@ -66,7 +41,6 @@ nav {
     position: fixed;
     background-color: var(--foreground-color);
     margin: 0;
-    /* height: 5%; */
     min-height: 30px;
     width: 100%;
     padding: .1px 0;
@@ -107,9 +81,3 @@ nav {
         display: none;
     }
 }
-
-/* .navWrapper {
-    height: 100%;
-    color: var(--highlight-color);
-    border-bottom: 2px solid var(--highlight-color);
-} */
